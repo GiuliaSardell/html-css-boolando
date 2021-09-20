@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.figure{
+  width: 250px;
+  height: 400px;
+  background-color: red;
+  display: inline-block;
+  margin: 0 5px;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.row{
+  margin: 0 auto;
+  width: 60%;
+}
+
+.right{
+  background-image: url(../img/1.webp);
+}
+
+.central{
+  background-image: url(../img/2.webp);
+}
+
+.left{
+  background-image: url(../img/3.webp);
+}
+
+.brand{
+  font-size: 10px;
+  color: grey;
+}
