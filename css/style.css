@@ -5,32 +5,78 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.figure{
-  width: 250px;
-  height: 400px;
-  background-color: red;
-  display: inline-block;
-  background-position: center;
-  background-size: cover;
-
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
 }
+
 
 main{
   margin: 0 auto;
   width: 55%;
 }
 
-.right{
-  background-image: url(../img/1.webp);
+/* proprietà img */
+
+.box {
+  float: left;
+  width:calc(100% / 3);
+  padding: 0 10px;
 }
 
-.central{
-  background-image: url(../img/2.webp);
+.box .img-item {
+  width:100%;
 }
 
-.left{
-  background-image: url(../img/3.webp);
+.box .img-back {
+  display: none;
 }
+
+.img-container:hover{
+  cursor: pointer;
+}
+
+.img-container:hover .img-front{
+  display: none;
+}
+
+.img-container:hover .img-back{
+  display: table;
+}
+
+.img-container{
+  position: relative;
+}
+
+.heart{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: black;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.discount{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  width: 30px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+
+}
+
+
+
+/* proprietà testi */
 
 .block span{
   display: block;
@@ -56,7 +102,18 @@ main{
 }
 
 
-.caption1, .caption{
-  display: inline-block;
-  margin-right: 97px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
