@@ -29,6 +29,10 @@ main{
   width:100%;
 }
 
+.box .img-front{
+    display: block;
+}
+
 .img-front{
   display: block;
 }
